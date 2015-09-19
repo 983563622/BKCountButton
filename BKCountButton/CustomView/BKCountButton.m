@@ -69,7 +69,22 @@ static const CGFloat buttonRatio = 0.0;
     // 执行的任务
     dispatch_source_set_event_handler(timer, ^
     {
-        if(startIndex <= 0)
+        if(startIndex > 0)
+        {
+            dispatch_async(dispatch_get_main_queue(), ^
+            {
+                NSString *disableTitle = [NSString stringWithFormat:@"%@%02zd%@",(prefixTitle ? prefixTitle : @""),startIndex,(suffixTitle ? suffixTitle : @"")];
+
+                NSLog(@"%@",disableTitle);
+
+                [self setTitle:disableTitle forState:UIControlStateDisabled];
+
+                [self setEnabled:NO];
+
+                startIndex --;
+            });
+        }
+        else
         {
             // 取消定时器
             dispatch_source_cancel(timer);
@@ -78,23 +93,6 @@ static const CGFloat buttonRatio = 0.0;
             {
                 [self setEnabled:YES];
             });
-        }
-        else
-        {
-            int seconds = startIndex % 60;
-            
-            dispatch_async(dispatch_get_main_queue(), ^
-            {
-                NSString *disableTitle = [NSString stringWithFormat:@"%@%02d%@",(prefixTitle ? prefixTitle : @""),seconds,(suffixTitle ? suffixTitle : @"")];
-                
-                NSLog(@"%@",disableTitle);
-                
-                [self setTitle:disableTitle forState:UIControlStateDisabled];
-                
-                [self setEnabled:NO];
-            });
-            
-            startIndex --;
         }
     });
     
