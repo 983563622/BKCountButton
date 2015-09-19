@@ -1,25 +1,158 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ONh-Cb-AoX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Count Controller-->
+        <scene sceneID="ZTr-m7-c4A">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BKCountController" id="Ed9-eD-18G" customClass="BKCountController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="W9P-x7-3HX"/>
+                        <viewControllerLayoutGuide type="bottom" id="d8i-c9-vHJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="I9X-jA-ad6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBc-pd-6Xb" userLabel="countBtn" customClass="BKCountButton">
+                                <rect key="frame" x="16" y="278" width="568" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lrd-qF-j1d"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnForBKCountController:" destination="Ed9-eD-18G" eventType="touchUpInside" id="ccl-3D-Or7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="PBc-pd-6Xb" secondAttribute="centerY" id="Mqu-Y8-Mz3"/>
+                            <constraint firstItem="PBc-pd-6Xb" firstAttribute="leading" secondItem="I9X-jA-ad6" secondAttribute="leadingMargin" id="bk0-SU-ilq"/>
+                            <constraint firstAttribute="centerX" secondItem="PBc-pd-6Xb" secondAttribute="centerX" id="jZi-Ik-GIj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countBtn" destination="PBc-pd-6Xb" id="JGa-ig-88a"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjW-Nl-XFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1231" y="-229"/>
+        </scene>
+        <!--Animation Count Controller-->
+        <scene sceneID="ZwO-16-F0S">
+            <objects>
+                <viewController storyboardIdentifier="BKAnimationCountController" id="Hyc-jO-Tgf" customClass="BKAnimationCountController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LAf-Vf-ceN"/>
+                        <viewControllerLayoutGuide type="bottom" id="U1S-Te-Xeo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="edF-yF-3DT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PC-Cf-d51" userLabel="countBtn" customClass="BKCountButton">
+                                <rect key="frame" x="16" y="278" width="568" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VQ2-bL-ZyZ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtnForBKAnimationCountController:" destination="Hyc-jO-Tgf" eventType="touchUpInside" id="mn8-ia-K7f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2PC-Cf-d51" firstAttribute="leading" secondItem="edF-yF-3DT" secondAttribute="leadingMargin" id="Xp8-Ht-lrp"/>
+                            <constraint firstAttribute="centerY" secondItem="2PC-Cf-d51" secondAttribute="centerY" id="ZAK-Sa-uYa"/>
+                            <constraint firstAttribute="centerX" secondItem="2PC-Cf-d51" secondAttribute="centerX" id="tCg-cd-77t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countBtn" destination="2PC-Cf-d51" id="URh-Tw-zYs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCU-3p-4FL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="687"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="kSi-ni-BSq">
+            <objects>
+                <tableViewController storyboardIdentifier="RootViewController" id="LKo-gf-gXL" customClass="RootViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="97C-Pd-GN4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="ASG-7X-LCg">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="brt-95-Ncu" style="IBUITableViewCellStyleDefault" id="xCu-Tv-0PK">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xCu-Tv-0PK" id="gFB-mP-H0b">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Count Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="brt-95-Ncu" userLabel="Count Button">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="pdu-I1-HmO" style="IBUITableViewCellStyleDefault" id="ypt-ce-nUJ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypt-ce-nUJ" id="Y1Q-YN-P7y">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Animation Count Button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pdu-I1-HmO" userLabel="Animation Count Button">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LKo-gf-gXL" id="Q2C-hC-C6u"/>
+                            <outlet property="delegate" destination="LKo-gf-gXL" id="C4e-v5-Vj9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="wrZ-ok-SO1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzC-MS-YsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="221"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qv3-eD-MnI">
+            <objects>
+                <navigationController id="ONh-Cb-AoX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M3V-qk-ASW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LKo-gf-gXL" kind="relationship" relationship="rootViewController" id="fp5-3U-yca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7z-CV-jq9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="221"/>
         </scene>
     </scenes>
 </document>

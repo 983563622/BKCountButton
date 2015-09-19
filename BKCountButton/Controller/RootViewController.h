@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  BKCountButton
 //
 //  Created by apple on 15/9/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootViewController : UITableViewController
 
 @end
-

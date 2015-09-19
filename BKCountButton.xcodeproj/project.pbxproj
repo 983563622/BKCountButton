@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		1831C3E11BAC04B10081D890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831C3E01BAC04B10081D890 /* main.m */; };
 		1831C3E41BAC04B10081D890 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831C3E31BAC04B10081D890 /* AppDelegate.m */; };
-		1831C3E71BAC04B10081D890 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831C3E61BAC04B10081D890 /* ViewController.m */; };
 		1831C3EA1BAC04B10081D890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1831C3E81BAC04B10081D890 /* Main.storyboard */; };
 		1831C3EC1BAC04B10081D890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1831C3EB1BAC04B10081D890 /* Images.xcassets */; };
 		1831C3EF1BAC04B10081D890 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1831C3ED1BAC04B10081D890 /* LaunchScreen.xib */; };
 		1831C3FB1BAC04B10081D890 /* BKCountButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831C3FA1BAC04B10081D890 /* BKCountButtonTests.m */; };
+		18A9CC1D1BAC3E3900DBCC9E /* BKCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC1C1BAC3E3900DBCC9E /* BKCountController.m */; };
+		18A9CC201BAC3E5000DBCC9E /* BKAnimationCountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC1F1BAC3E5000DBCC9E /* BKAnimationCountController.m */; };
+		18A9CC251BAC418200DBCC9E /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC241BAC418200DBCC9E /* RootViewController.m */; };
+		18A9CC291BAC4A9400DBCC9E /* BKCountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC281BAC4A9400DBCC9E /* BKCountButton.m */; };
+		18A9CC2E1BAC4AA200DBCC9E /* UIButton+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC2B1BAC4AA200DBCC9E /* UIButton+K.m */; };
+		18A9CC2F1BAC4AA200DBCC9E /* UIImage+K.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A9CC2D1BAC4AA200DBCC9E /* UIImage+K.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,25 @@
 		1831C3E01BAC04B10081D890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1831C3E21BAC04B10081D890 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1831C3E31BAC04B10081D890 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1831C3E51BAC04B10081D890 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1831C3E61BAC04B10081D890 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1831C3E91BAC04B10081D890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1831C3EB1BAC04B10081D890 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1831C3EE1BAC04B10081D890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1831C3F41BAC04B10081D890 /* BKCountButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BKCountButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1831C3F91BAC04B10081D890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1831C3FA1BAC04B10081D890 /* BKCountButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCountButtonTests.m; sourceTree = "<group>"; };
+		18A9CC1B1BAC3E3900DBCC9E /* BKCountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCountController.h; sourceTree = "<group>"; };
+		18A9CC1C1BAC3E3900DBCC9E /* BKCountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCountController.m; sourceTree = "<group>"; };
+		18A9CC1E1BAC3E5000DBCC9E /* BKAnimationCountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAnimationCountController.h; sourceTree = "<group>"; };
+		18A9CC1F1BAC3E5000DBCC9E /* BKAnimationCountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAnimationCountController.m; sourceTree = "<group>"; };
+		18A9CC231BAC418200DBCC9E /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		18A9CC241BAC418200DBCC9E /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		18A9CC261BAC443D00DBCC9E /* BKCountButton.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCountButton.pch; sourceTree = "<group>"; };
+		18A9CC271BAC4A9400DBCC9E /* BKCountButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCountButton.h; sourceTree = "<group>"; };
+		18A9CC281BAC4A9400DBCC9E /* BKCountButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCountButton.m; sourceTree = "<group>"; };
+		18A9CC2A1BAC4AA200DBCC9E /* UIButton+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+K.h"; sourceTree = "<group>"; };
+		18A9CC2B1BAC4AA200DBCC9E /* UIButton+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+K.m"; sourceTree = "<group>"; };
+		18A9CC2C1BAC4AA200DBCC9E /* UIImage+K.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+K.h"; sourceTree = "<group>"; };
+		18A9CC2D1BAC4AA200DBCC9E /* UIImage+K.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+K.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +97,11 @@
 		1831C3DD1BAC04B10081D890 /* BKCountButton */ = {
 			isa = PBXGroup;
 			children = (
+				18A9CC221BAC3EB400DBCC9E /* CustomView */,
+				18A9CC211BAC3E9B00DBCC9E /* Category */,
+				18A9CC1A1BAC3DF700DBCC9E /* Controller */,
 				1831C3E21BAC04B10081D890 /* AppDelegate.h */,
 				1831C3E31BAC04B10081D890 /* AppDelegate.m */,
-				1831C3E51BAC04B10081D890 /* ViewController.h */,
-				1831C3E61BAC04B10081D890 /* ViewController.m */,
 				1831C3E81BAC04B10081D890 /* Main.storyboard */,
 				1831C3EB1BAC04B10081D890 /* Images.xcassets */,
 				1831C3ED1BAC04B10081D890 /* LaunchScreen.xib */,
@@ -98,6 +115,7 @@
 			children = (
 				1831C3DF1BAC04B10081D890 /* Info.plist */,
 				1831C3E01BAC04B10081D890 /* main.m */,
+				18A9CC261BAC443D00DBCC9E /* BKCountButton.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +135,39 @@
 				1831C3F91BAC04B10081D890 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18A9CC1A1BAC3DF700DBCC9E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18A9CC1B1BAC3E3900DBCC9E /* BKCountController.h */,
+				18A9CC1C1BAC3E3900DBCC9E /* BKCountController.m */,
+				18A9CC1E1BAC3E5000DBCC9E /* BKAnimationCountController.h */,
+				18A9CC1F1BAC3E5000DBCC9E /* BKAnimationCountController.m */,
+				18A9CC231BAC418200DBCC9E /* RootViewController.h */,
+				18A9CC241BAC418200DBCC9E /* RootViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18A9CC211BAC3E9B00DBCC9E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18A9CC2A1BAC4AA200DBCC9E /* UIButton+K.h */,
+				18A9CC2B1BAC4AA200DBCC9E /* UIButton+K.m */,
+				18A9CC2C1BAC4AA200DBCC9E /* UIImage+K.h */,
+				18A9CC2D1BAC4AA200DBCC9E /* UIImage+K.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18A9CC221BAC3EB400DBCC9E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				18A9CC271BAC4A9400DBCC9E /* BKCountButton.h */,
+				18A9CC281BAC4A9400DBCC9E /* BKCountButton.m */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1831C3E71BAC04B10081D890 /* ViewController.m in Sources */,
+				18A9CC291BAC4A9400DBCC9E /* BKCountButton.m in Sources */,
+				18A9CC201BAC3E5000DBCC9E /* BKAnimationCountController.m in Sources */,
 				1831C3E41BAC04B10081D890 /* AppDelegate.m in Sources */,
+				18A9CC251BAC418200DBCC9E /* RootViewController.m in Sources */,
+				18A9CC2E1BAC4AA200DBCC9E /* UIButton+K.m in Sources */,
+				18A9CC2F1BAC4AA200DBCC9E /* UIImage+K.m in Sources */,
 				1831C3E11BAC04B10081D890 /* main.m in Sources */,
+				18A9CC1D1BAC3E3900DBCC9E /* BKCountController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +403,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BKCountButton/BKCountButton.pch";
 				INFOPLIST_FILE = BKCountButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,7 +417,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BKCountButton/BKCountButton.pch";
 				INFOPLIST_FILE = BKCountButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +480,7 @@
 				1831C4001BAC04B10081D890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1831C4011BAC04B10081D890 /* Build configuration list for PBXNativeTarget "BKCountButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +489,7 @@
 				1831C4031BAC04B10081D890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
